@@ -32,11 +32,11 @@ public class JutsuService {
 	public List<Jutsu> getAllJutsus(){
 		return jutsuRepo.findAll();
 	}
-	//update a car
+	//update a jutsu
 	public Jutsu updateJutsu(Jutsu jutsu) {
 		return jutsuRepo.save(jutsu);
 	}
-	//delete a car
+	//delete a jutsu
 	public void deleteJutsu(Long id) {
 		this.jutsuRepo.deleteById(id);
 	}
